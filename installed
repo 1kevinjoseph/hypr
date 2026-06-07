@@ -1,3 +1,10 @@
+ python-validity open-fprintd fprintd-clients 
+ fprintd
+ rofi
+ hyprlock
+ hypridle
+ dunst
+ 
 # ─────────────────────────────────────────────
 #  hyprlock.conf — Violet Glass Design
 #  Resolution: 3840×2160 (4K)
@@ -78,21 +85,21 @@ label {
 #  Positive Y moves down, negative Y moves up
 # ═══════════════════════════════════════════════
 
-# Avatar — f
-# image {
-#     monitor      =
-#     path         = /home/jupiter/Documents/backs/pexels-mali-453096.jpg
-#     size         = 160
-#     rounding     = -1
-#     border_size  = 2
-#     border_color = rgba(130, 110, 255, 0.45)
-#     position     = 0, 180
-#     halign       = center
-#     valign       = center
-#     shadow_passes = 2
-#     shadow_size   = 18
-#     shadow_color  = rgba(100, 80, 255, 0.25)
-# }
+# Avatar — full circle crop
+image {
+    monitor      =
+    path         = /home/jupiter/Documents/backs/pexels-mali-453096.jpg
+    size         = 160
+    rounding     = -1
+    border_size  = 2
+    border_color = rgba(130, 110, 255, 0.45)
+    position     = 0, 180
+    halign       = center
+    valign       = center
+    shadow_passes = 2
+    shadow_size   = 18
+    shadow_color  = rgba(100, 80, 255, 0.25)
+}
 
 # Username
 label {
@@ -146,6 +153,20 @@ input-field {
 
     capslock_color = rgba(239, 159, 39, 0.85)
 }
+
+# Hint
+label {
+    monitor       =
+    text          = press enter to unlock
+    color         = rgba(160, 155, 200, 0.28)
+    font_size     = 22
+    font_family   = DM Sans Light
+    position      = 0, -210
+    halign        = center
+    valign        = center
+    shadow_passes = 0
+}
+
 
 # ═══════════════════════════════════════════════
 #  BOTTOM — STATUS BAR
